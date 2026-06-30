@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lito</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .gracias-box {
+      background: var(--caja);
+      border-radius: var(--radio);
+      padding: 48px 36px;
+      max-width: 400px;
+      box-shadow: 0 4px 30px rgba(0,0,0,.4);
+    }
+    .gracias-box h1 { font-size: 28px; margin-bottom: 12px; }
+    .gracias-box p  { color: var(--texto-suave); font-size: 15px; }
+    .volver {
+      display: inline-block;
+      margin-top: 24px;
+      color: var(--verde);
+      font-weight: bold;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="stars-canvas"></canvas>
+  <div class="gracias-box" style="position:relative;z-index:1">
+    <h1>lito 💌</h1>
+    <p>sha me shego seguroo</p>
+    <p>fijaos en los emojis del final de la paginaa</p>
+    <a class="volver" href="index.html">← pa tras</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

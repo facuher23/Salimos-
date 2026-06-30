@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para una linda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="stars-canvas"></canvas>
+
+  <div id="banner">
+    <div class="banner-perfil">
+      <img src="foto_yo.jpeg" id="fotoyo" alt="Foto de perfil">
+      <div>
+        <h1>una cosita para voss :)</h1>
+        <p>Para Pia jiji</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contador">
+    nos conocemos hace <span id="dias-contador">...</span> díass
+  </div>
+
+  <div id="contenido">
+
+    <div class="cajas">
+      <img src="luna.jpeg" class="foto-caja foto-grande" alt="Fotografía de la luna tomada por Facundo">
+    </div>
+
+    <div class="cajas media">
+      <h2>por qué con ustedd?</h2>
+      <ul class="frases-lista">
+        <li>Porque sos lovely</li>
+        <li>Me gusta una que se llama justo Pia</li>
+        <li>Sos muymuy linda</li>
+        <li>Me gusta pasar tiempo con vos</li>
+        <li>Porque ya son las vacas y os lo mereceis</li>
+      </ul>
+    </div>
+
+    <div class="cajas media">
+      <h2>¿a dónde vamos?</h2>
+      <div class="etiquetas">
+        <a class="etiqueta" href="https://maps.app.goo.gl/S3J49CfTsaXDtMXm7" target="_blank">☕ Nipoti</a>
+        <a class="etiqueta" href="https://maps.app.goo.gl/zcuScy9pAKQs1Qn79" target="_blank">🌿 Al parque</a>
+        <a class="etiqueta" href="https://maps.app.goo.gl/f2UYCHZH5TrQFdBo7" target="_blank">🏞️ Laguito</a>
+        <a class="etiqueta" href="https://maps.app.goo.gl/FrqxcBMbyZqVu3yT8" target="_blank">🎬 Cine</a>
+        <a class="etiqueta" href="https://maps.app.goo.gl/B5CruoUdHxFvpHZW9" target="_blank">🍽️ Cenar</a>
+        <span class="etiqueta">🎮 Peli en casa</span>
+        <span class="etiqueta">👨‍🍳 Cocinamos algo</span>
+      </div>
+    </div>
+
+    <div class="cajas">
+      <img src="lentes.jpeg" class="foto-caja foto-grande foto-llena" alt="Foto de Facu">
+    </div>
+
+    <div class="cajas ancha" id="salimos">
+      <h2>salimos? jiji</h2>
+      <p class="subtitulo">bueno, a tomar algo jeje </p>
+
+      <div class="btns-salimos" id="contenedor-btns">
+        <button id="btn-si" onclick="dijoBienSi()">✅ yep</button>
+        <button id="btn-no">❌ no :(</button>
+      </div>
+
+      <div id="msg-si">
+        <p>vamooooo, aunque mucho para elegir no habia jiji</p>
+        <p class="msg-secreto">a que la dalma está durmiendo 😴 jeje</p>
+      </div>
+    </div>
+
+    <div class="cajas ancha" id="formulario">
+      <h2>cual queri?</h2>
+      <p class="subtitulo">si elegis me llega la respuestaa</p>
+
+      <form action="https://formsubmit.co/facundoher2009@gmail.com" method="POST">
+        <input type="hidden" name="_subject"  value="respondiooo 🎉">
+        <input type="hidden" name="_captcha"  value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next"     value="https://facuher23.github.io/Salimos-/gracias.html">
+
+        <div class="opciones-plan">
+          <input type="radio" name="plan" value="Nipoti" id="p1">
+          <label for="p1">☕ Nipoti</label>
+
+          <input type="radio" name="plan" value="Parque San Martín" id="p2">
+          <label for="p2">🌿 Al parque</label>
+
+          <input type="radio" name="plan" value="Lago del Torreón" id="p3">
+          <label for="p3">🏞️ Laguito</label>
+
+          <input type="radio" name="plan" value="Cine" id="p5">
+          <label for="p5">🎬 Cine</label>
+
+          <input type="radio" name="plan" value="Cenar" id="p6">
+          <label for="p6">🍽️ Cenar</label>
+
+          <input type="radio" name="plan" value="Peli en casa" id="p7">
+          <label for="p7">🎮 Peli en casa</label>
+
+          <input type="radio" name="plan" value="Cocinar" id="p8">
+          <label for="p8">👨‍🍳 Cocinar</label>
+        </div>
+
+        <label class="campo-label" for="cuando">cuando tu puede?</label>
+        <input type="text" id="cuando" name="cuando" class="campo" placeholder="el finde, sabado...">
+
+        <button type="submit" class="btn-enviar">lito 💌</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="redes-sociales">
+    <span class="emoji" onclick="window.location.href='fotos.html'" title="mi fotógrafa favorita">💖</span>
+    <span class="emoji" onclick="window.location.href='cancion.html'" title="una canción">💌</span>
+  </div>
+
+  <div id="footer">
+    <p>hecho con amor por facu para pia <3</p>
+    <p>adioooo</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
